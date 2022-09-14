@@ -8,6 +8,10 @@ formatted as follows:
 
 `#github:[organization name]/[repository name]/[markdown file name]`
 
+mine is 
+
+`https://arcade.makecode.com/--skillmap#github:Furacity/grey-cup-2022/skillmap`
+
 ## Syntax
 
 The skill map definition can be found in the `skillmap.md` file. Metadata about the skill
