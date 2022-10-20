@@ -58,27 +58,6 @@
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
 ```
-
-## Welcome @unplugged
-
-Now let's take a look at the [__*sidescrolling*__](#scrolld "games that are viewed from the side, with most of the action happening horizontally") 
-[__*platformer*__](#plat "games that rely on jump and run as their main mechanic").  
-
-This kind of game peeks in on the action from the side, using "jump" and "run"
-as the main mechanic.  
-
-By the time you finish this set of tutorials, you should know all you need 
-to make a fun and engaging arcade game worth sharing.
-
-![Our first platformer](/static/skillmaps/platformer/platformer1.gif "Look what we're about to learn today!")
-
-
-## Create the player
-
-The first thing any good platformer needs is a main character. 🐒
-
-In Arcade, our characters are [__*sprites*__](#sprote "2-D images that move on the screen").  
-We'll want to create our main sprite and get it moving before we do anything else. 
 <hr>
 
 🔲 From the ``||sprites:Sprites||`` category, drag the ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` 
@@ -89,32 +68,36 @@ block to the end of the ``||loops:on start||`` container.
  to open the sprite editor.  From there, you can switch over to "Gallery"
  and choose a pre-drawn character.
 <hr/>
->>*Tip: Don't like any of the predrawn characters? Stay in the "Editor"
-and create one of your own*!
+## Welcome @unplugged
+
+In this tutorial were going to make a mini football game!
+The goal of this game is to kick as many balls through the uprights as you can, before timer runs out.
+
+By the end of this tutorial you will have made a fully working game!
+
+However, our scene is completely empty. That means we need to get to work!
+
+## Adding Our Background
+
+Every football game needs a field to play on, so lets add one!
+
+This step requires us to add a background into our game, follow the steps below to add one in.
+<hr>
+
+🔲 From the ``||scene:Scene||`` category, drag the ``||scene:set background image to [ ]||`` 
+block to the end of the ``||loops:on start||`` container.
+
+🔲 Click on the grey box in the middle of your
+ ``||scene:set background image to [ ]||`` block
+ to open the sprite editor.  From there, you can switch over to "My Assets"
+ and choose the football field.
+<hr/>
+>>*Tip: You can change the colors of the field or make your own in the editor*!
 
 
 ```blocks
-scene.setBackgroundColor(11)
-tiles.setTilemap(tilemap`level`)
 // @highlight
-let mySprite = sprites.create(img`
-. . . . . f f f f f . . . . . . 
-. . . . f e e e e e f . . . . . 
-. . . f d d d d d e e f . . . . 
-. . f f f d d f f d e f f . . . 
-. c d d e e d d d d e d d f . . 
-. c c d d d d c d d e d f f f . 
-. c d c c c c d d d e d f b d f 
-. . c d d d d d d e e f f d d f 
-. . . c d d d d e e f f e f f f 
-. . . . f f f e e f e e e f . . 
-. . . . f e e e e e e e f f f . 
-. . . f e e e e e e f f f e f . 
-. . f f e e e e f f f f f e f . 
-. f b d f e e f b b f f f e f . 
-. f d d f e e f d d b f f f f . 
-. f f f f f f f f f f f f f . . 
-    `, SpriteKind.Player)
+scene.setBackgroundImage(assets.image`field`)
 ```
 
 ## Move the player
