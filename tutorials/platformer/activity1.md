@@ -106,11 +106,6 @@
     }
 }
 ```
-
-```template
-```
-
-
 ## Welcome @unplugged
 
 In this tutorial were going to make a mini football game!
