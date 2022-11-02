@@ -192,6 +192,7 @@ Our player also starts in the middle of the screen which will be an issue later.
 🔲 Drag a ``||sprites:set [mySprite] position to x[0] y[0]||`` block to the end of 
 the ``||loops:on start||`` container.
 
+
 🔲 Click on the **x** position and change it from **0** to **10**.
 
 🔲 Click on the **y** position and change it from **0** to **60**.
