@@ -14,7 +14,7 @@
 * description: Intro to our tutorial cards
 * tags: easy
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/interface/activity1 
+* url: https://github.com/Furacity/grey-cup-2022/blob/d2a7512bdddb7c6bd26c03f7f6db6c6f83f4e3f2/tutorials/interface/activity1
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/interface/activity1.png
 
 ## greycup
