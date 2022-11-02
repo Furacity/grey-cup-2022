@@ -68,17 +68,17 @@
 
 
 
-## platformer
-* name: Learn to Make a Platformer
-* description: A skillmap that takes you through how to build a platformer with multiple levels.
+## greycyp
+* name: Making a football game
+* description: A skillmap that takes you through how to build a mini arcade style football game
 * completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/learn-to-make-a-platformer.pdf
 
-### platformer-activity1
+### greycup-activity1
 
-* name: Simple Platformer
+* name: Getting Started
 * type: tutorial
-* description: Learn how to make a player character that can jump and move around a tilemap.
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity1
+* description: Learn how to create a player and move them around a field.
+* url: https://github.com/Furacity/grey-cup-2022/blob/main/tutorials/platformer/activity1.md
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity1.png
 * tags: easy
 * next: platformer-activity2
