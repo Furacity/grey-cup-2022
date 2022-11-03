@@ -224,7 +224,7 @@ We are going to add a little bit of physics to the ball as we need it to fly in 
 So let's get to it!
 <hr/>
 
-🔲 Add an ``||controller:on [A] button pressed||`` block 
+🔲 Add an ``||controller:on [A] button [pressed]||`` block 
 into the workspace.
 
 🔲 Click the dropdown and change it to **A**
