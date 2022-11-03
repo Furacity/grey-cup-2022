@@ -27,7 +27,7 @@
 * name: Getting Started
 * type: tutorial
 * description: Learn how to create a player and move them around a field.
-* url: https://github.com/Furacity/grey-cup-2022/blob/d2a7512bdddb7c6bd26c03f7f6db6c6f83f4e3f2/tutorials/platformer/activity1
+* url: https://github.com/microsoft/pxt-skillmap-sample/blob/b36c62725e3fe26fca25b64cf158878b5fccd9be/tutorials/platformer/activity1.md
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity1.png
 * tags: easy
 * next: platformer-activity2
