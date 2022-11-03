@@ -1,5 +1,5 @@
 
-# Tiles and Camera
+# Score System
 
 
 ```jres
@@ -131,6 +131,11 @@ This will require precise placement so be sure to be very careful while reading 
 of the ``||loops:on start||`` container.
 
 🔲 Click the dropdown and press "Rename Variable". Name it "goalPost".
+
+🔲 Drag ``||variables:set [mySprite] position to x[0] y[0]||`` into the bottom 
+of the ``||loops:on start||`` container.
+
+🔲 Change the **x** value from **0** to **122** and the **y** value from **0** to **36**.
 <br/>
 
 ```blocks
@@ -206,63 +211,108 @@ let goalPost = sprites.create(img`
     ..........6bbb6.
     ...........666..
     `, SpriteKind.Goal)
+    // @highlight
+    goalPost.setPosition(122, 36)
 ```
 
-## Start Tile 
+## Kicking the ball
 
-🎥 Now we can move around and the camera will follow 🎥  
+Now that we have the uprights, we need a ball to kick through them.
 
-Unfortunately, our player is starting in dangerous position!
+We are going to add a little bit of physics to the ball as we need it to fly in an arc.
 
-By default, all sprites spawn in the middle of the screen.
-Let's change the game so your player starts somewhere safe.
+So let's get to it!
 <hr/>
 
-🔲 Snap a ``||scene:place [mySprite] on top of random [ ]||`` block 
-into the bottom of the ``||loops:on start||`` container.
+🔲 Add an ``||controller:on [A] button pressed||`` block 
+into the workspace.
 
-🔲 Click the checkerboard tile and replace it with the green flag.
+🔲 Click the dropdown and change it to **A**
 <hr/>
-**Now your sprite starts on the green flag tile!**  
-
->> *Tip: If you want your sprite to start somewhere else, 
-you can move the green flag by editing the
-[__tilemap__](#tilemp "a grid of square tiles that makes up our background").
+**This doesn't do anything yet, but just wait, it gets crazy!**  
 
 ```blocks
-let mySprite: Sprite = null
-scene.setBackgroundColor(11)
-mySprite = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    `, SpriteKind.Player)
-mySprite.ay = 500
-controller.moveSprite(mySprite, 100, 0)
-tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(mySprite)
+scene.setBackgroundImage(assets.image`field`)
+mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
+controller.moveSprite(mySprite)
+mySprite.setPosition(10, 60)
+goalPost.setPosition(122, 36)
 // @highlight
-tiles.placeOnRandomTile(mySprite, myTiles.tile3)
+let goalPost = sprites.create(img`
+    .............cc.
+    ............cbbc
+    ............cbbc
+    ...........bdcc.
+    ...........bdbb.
+    ..........bddc..
+    ..........bdbb..
+    .........bddc...
+    .........bdbb...
+    ........bddc....
+    ........bdbb....
+    .......bddc.....
+    .......bdbb.....
+    ......bddc......
+    ......bdbb......
+    .....bddc.......
+    .....bdbb.......
+    ....bddc........
+    ....bdbb........
+    ...bddc.........
+    ...bdbb.........
+    ..bddc..........
+    ..bdbb..........
+    .bddc...........
+    .bdbb...........
+    b1dc............
+    b11c............
+    b11c............
+    b11c.........cc.
+    b11c........cbbc
+    b11c........cbbc
+    b11c.......bdcc.
+    b11c.......bdbb.
+    b11c......bddc..
+    b11bccc...bdbb..
+    b11bbbbcccddc...
+    b11bcccbccdbb...
+    b11b..ccbddc....
+    b11b...ccdbbc...
+    b11b...bddcbc...
+    b11b...bdbbcbc..
+    b11b..bddc.fbc..
+    b11b..bdbb.fbf..
+    b11b.bddc..fcf..
+    b11b.bdbb..fcf..
+    b11bbddc...fcf..
+    b11bbdbb...fcf..
+    b11bddc...cfcfc.
+    b11ddbb..cbfcfbc
+    b1dddc...cdfffdc
+    b1ddbb...cdcfcdc
+    cdddc....cbdddbc
+    cddbb....cbbbbbc
+    cddc.....cbbbbbc
+    cdbb.....cbbbbbc
+    .cc......cbbbbbc
+    .........cbbbbbc
+    .........cbbbbbc
+    .........cbbbbbc
+    .........8bbbbb8
+    .........8bbbbb8
+    .........6bbbbb6
+    ..........6bbb6.
+    ...........666..
+    `, SpriteKind.Goal)
+    // @highlight
+    goalPost.setPosition(122, 36)
+    // @highlight
+    controller.A.onEvent(ControllerButtonEvent.Pressed, function () {})
 ```
 
-## Game Over Pt. 1
+## Kickoff
 
-💀 Time to add some *danger* to this game 💀  
-
-When the player overlaps the skull tile, we'll trigger a "GAME OVER".
+Now that we have a button to kick the ball, we need to make sure the ball is created when we press it!
 <hr/>
 
 🔲 Drag the ``||scene:on [sprite] of kind [Player] overlaps [ ] at [location]||`` container 
