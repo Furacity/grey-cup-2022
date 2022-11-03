@@ -37,7 +37,7 @@
 * name: Camera and Tiles
 * type: tutorial
 * description: Learn how to use the camera and add tile overlap events to give the player a way to win and lose.
-* url: https://github.com/Furacity/grey-cup-2022/blob/d2a7512bdddb7c6bd26c03f7f6db6c6f83f4e3f2/tutorials/platformer/activity2
+* url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity2
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity2.png
 * tags: easy, tiles
 * next: platformer-activity3
