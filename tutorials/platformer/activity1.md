@@ -199,8 +199,6 @@ mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
 controller.moveSprite(mySprite)
 // @highlight
 mySprite.setPosition(10, 60)
-// @highlight
-goalPost.setPosition(122, 36)
 ```
 
 ## Done
