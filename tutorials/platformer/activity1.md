@@ -184,7 +184,7 @@ While playing you may have notices that we can walk right off the screen. That i
 
 Our player also starts in the middle of the screen which will be an issue later. So let's fix these issues!
 <hr/>
-🔲 Drag a ``||sprites:set [mySprite] position to x[0] y[0]||`` block to the end of 
+🔲 Drag a ``||sprites:set [mySprite] set [x] to [0]||`` block to the end of 
 the ``||loops:on start||`` container.
 
 
@@ -198,7 +198,7 @@ scene.setBackgroundImage(assets.image`field`)
 mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
 controller.moveSprite(mySprite)
 // @highlight
-mySprite.setPosition(10, 60)
+mySprite.x = 10
 ```
 
 ## Done
