@@ -190,7 +190,7 @@ the ``||loops:on start||`` container.
 
 🔲 Click on the **x** position and change it from **0** to **10**.
 
-🔲 Click on the **y** position and change it from **0** to **60**.
+🔲 Add a new ``||sprites:set [mySprite] stay in screen <true>||
 <br/>
 
 ```blocks
