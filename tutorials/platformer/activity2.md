@@ -132,7 +132,7 @@ of the ``||loops:on start||`` container.
 
 🔲 Click the dropdown and press "Rename Variable". Name it "goalPost".
 
-🔲 Drag ``||variables:set [mySprite] position to x[0] y[0]||`` into the bottom 
+🔲 Drag ``||sprites:set [mySprite] position to x[0] y[0]||`` into the bottom 
 of the ``||loops:on start||`` container.
 
 🔲 Change the **x** value from **0** to **122** and the **y** value from **0** to **36**.
