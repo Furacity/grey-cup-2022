@@ -111,8 +111,7 @@
 scene.setBackgroundImage(assets.image`field`)
 mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
 controller.moveSprite(mySprite)
-mySprite.setPosition(10, 60)
-goalPost.setPosition(122, 36)
+mySprite..x = 10
 ```
 
 ## Start @unplugged
