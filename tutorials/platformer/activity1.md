@@ -1,7 +1,5 @@
 # Grey Cup Game
 
-
-
 ```assetjson
 {
   "README.md": " \n\n\n> Open this page at [https://furacity.github.io/grey-cup/](https://furacity.github.io/grey-cup/)\n\n## Use as Extension\n\nThis repository can be added as an **extension** in MakeCode.\n\n* open [https://arcade.makecode.com/](https://arcade.makecode.com/)\n* click on **New Project**\n* click on **Extensions** under the gearwheel menu\n* search for **https://github.com/furacity/grey-cup** and import\n\n## Edit this project ![Build status badge](https://github.com/furacity/grey-cup/workflows/MakeCode/badge.svg)\n\nTo edit this repository in MakeCode.\n\n* open [https://arcade.makecode.com/](https://arcade.makecode.com/)\n* click on **Import** then click on **Import URL**\n* paste **https://github.com/furacity/grey-cup** and click import\n\n## Blocks preview\n\nThis image shows the blocks code from the last commit in master.\nThis image may take a few minutes to refresh.\n\n![A rendered view of the blocks](https://github.com/furacity/grey-cup/raw/master/.github/makecode/blocks.png)\n\n#### Metadata (used for search, rendering)\n\n* for PXT/arcade\n<script src=\"https://makecode.com/gh-pages-embed.js\"></script><script>makeCodeRender(\"{{ site.makecode.home_url }}\", \"{{ site.github.owner_name }}/{{ site.github.repository_name }}\");</script>\n",
@@ -15,6 +13,10 @@
   "tilemap.g.jres": "{\n    \"transparency16\": {\n        \"data\": \"hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\",\n        \"mimeType\": \"image/x-mkcd-f4\",\n        \"tilemapTile\": true\n    },\n    \"*\": {\n        \"mimeType\": \"image/x-mkcd-f4\",\n        \"dataEncoding\": \"base64\",\n        \"namespace\": \"myTiles\"\n    }\n}",
   "tilemap.g.ts": "// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\"tile\", function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \"transparency16\":return transparency16;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n"
 }
+```
+
+```blockconfig.global
+mySprite.x = 0
 ```
 
 ## Welcome @unplugged
@@ -67,7 +69,7 @@ block to the end of the ``||loops:on start||`` container.
 ```blocks
 scene.setBackgroundImage(assets.image`field`)
 // @highlight
-mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
+let mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
 ```
 
 ## Move the player
@@ -84,34 +86,37 @@ to the end of the ``||loops:on start||`` container
 
 ```blocks
 scene.setBackgroundImage(assets.image`field`)
-mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
+let mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
 // @highlight
 controller.moveSprite(mySprite)
 ```
 
 ## Set player position and keep in screen
+We have two issues.
 
-While playing you may have notices that we can walk right off the screen. That is not something we want to be able to do. 
+1. Our player starts in the middle of the screen which will become a problem later.
 
-Our player also starts in the middle of the screen which will be an issue later. So let's fix these issues!
+2. While playing you may have noticed that we can walk right off the screen. That is not something we want to be able to do. 
+
+So let's fix these issues!
 <hr/>
 🔲 Drag a ``||sprites:set [mySprite] [x] to [0]||`` block to the end of 
 the ``||loops:on start||`` container.
 
-
 🔲 Click on the **x** position and change it from **0** to **10**.
 
-🔲 Add a new ``||sprites:set [mySprite] stay in screen <true>||
+🔲 Add a new ``||sprites:set [mySprite] stay in screen <true>||`` and make sure its in the **ON** position
 <br/>
 
 ```blocks
 scene.setBackgroundImage(assets.image`field`)
-mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
+let mySprite = sprites.create(assets.image`rider_player0`, SpriteKind.Player)
 controller.moveSprite(mySprite)
 // @highlight
 mySprite.x = 10
+// @highlight
+mySprite.setStayInScreen(true)
 ```
-
 ## Done
 
 **Now we have a scene and a player that moves around!** 
