@@ -170,7 +170,7 @@ Let's get at it!
 
 <hr/>
 
-🔲 Drag ``||sprites:destroy[mySprite]||`` into the bottom of the ``||info:change score by [1]||`` into the ``||sprites:on [sprite] of kind [Projectile] overlaps [otherSprite] of kind [Goal]||`` container.
+🔲 Drag ``||sprites:destroy[mySprite]||`` into the bottom of the  ``||sprites:on [sprite] of kind [Projectile] overlaps [otherSprite] of kind [Goal]||`` container.
 
 🔲 Now we need to do something a little weird, we need to take the ``||variables:[sprite]||`` part from the ``||sprites:on [sprite] of kind [Projectile] overlaps [otherSprite] of kind [Goal]||`` container and place it in the ``||variables:[mySprite]||`` part of ``||sprites:destroy[mySprite]||``.
 
