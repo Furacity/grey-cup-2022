@@ -134,7 +134,7 @@ We are going to add a little bit of physics to the ball as we need it to fly in 
 So let's get to it!
 <hr/>
 
-🔲 Add an ``||controller:on [A] button [pressed]||`` block 
+🔲 Add an ``||controller:on [A] button [pressed]||`` container
 into the workspace.
 
 <hr/>
@@ -150,7 +150,7 @@ into the workspace.
 Now that we have a button to kick the ball, we need to make sure the ball is created when we press it!
 <hr/>
 
-🔲 Drag the ``||sprites:set [projectile] to [] from [mySprite] with vx[50] and vy[50]||`` container into the workspace.
+🔲 Drag the ``||sprites:set [projectile] to [] from [mySprite] with vx[50] and vy[50]||`` into the ``||controller:on [A] button [pressed]||`` container.
 
 🔲 Click on the grey square and select the football from the gallery.
 
