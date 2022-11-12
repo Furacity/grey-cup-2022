@@ -32,41 +32,41 @@
 * tags: easy
 * next: platformer-activity2
 
-### platformer-activity2
+### greycup-activity2
 
-* name: Camera and Tiles
+* name: Field Goals
 * type: tutorial
-* description: Learn how to use the camera and add tile overlap events to give the player a way to win and lose.
+* description: Learn how to instantiate objects and apply basic physics to them.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity2
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity2.png
-* tags: easy, tiles
+* tags: easy, long
 * next: platformer-activity3
 
-### platformer-activity3
+### greycup-activity3
 
-* name: Simple Enemies
+* name: Scoring
 * type: tutorial
-* description: Learn how to add enemies to your game that follow the player.
+* description: Learn how to add score into your game using overlaps.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity3
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity3.png
 * tags: intermediate, overlaps
 * next: platformer-activity4
 
-### platformer-activity4
+### greycup-activity4
 
-* name: Multiple Levels
+* name: Adding Enemies
 * type: tutorial
-* description: Add a second level to your platformer using functions.
+* description: Add some enemies to add some extra challenge to your game.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity4
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity4.png
-* tags: intermediate, functions
+* tags: intermediate, overlaps
 * next: platformer-activity5
 
-### platformer-activity5
+### greycup-activity5
 
-* name: Enemy AI
+* name: Optional Features
 * type: tutorial
-* description: Add physics and AI to the enemies in your game.
+* description: Add an animation to the football, change the amount of lives the player has and add a countdown timer.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity5
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity5.png
 * tags: intermediate, AI, physics
