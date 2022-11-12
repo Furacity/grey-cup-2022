@@ -28,7 +28,7 @@
 * type: tutorial
 * description: Learn how to create a player and move them around a field.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity1
-* imageUrl: https://github.com/Furacity/grey-cup-2022/img/platformer/activity1.jpeg
+* imageUrl: https://github.com/Furacity/grey-cup-2022/img/platformer/activity1.jpg
 * tags: easy
 * next: greycup-activity2
 
@@ -38,7 +38,7 @@
 * type: tutorial
 * description: Learn how to instantiate objects and apply basic physics to them.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity2
-* imageUrl: https://github.com/Furacity/grey-cup-2022/img/platformer/activity2.jpeg
+* imageUrl: https://github.com/Furacity/grey-cup-2022/img/platformer/activity2.jpg
 * tags: easy, long
 * next: greycup-activity3
 
