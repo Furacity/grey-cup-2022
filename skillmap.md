@@ -30,7 +30,7 @@
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity1
 * imageUrl: https://github.com/Furacity/grey-cup-2022/img/platformer/activity1.jpeg
 * tags: easy
-* next: platformer-activity2
+* next: greycup-activity2
 
 ### greycup-activity2
 
@@ -40,7 +40,7 @@
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity2
 * imageUrl: https://github.com/Furacity/grey-cup-2022/img/platformer/activity2.jpeg
 * tags: easy, long
-* next: platformer-activity3
+* next: greycup-activity3
 
 ### greycup-activity3
 
@@ -50,7 +50,7 @@
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity3
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity3.png
 * tags: intermediate, overlaps
-* next: platformer-activity4
+* next: greycup-activity4
 
 ### greycup-activity4
 
@@ -60,7 +60,7 @@
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity4
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity4.png
 * tags: intermediate, overlaps
-* next: platformer-activity5
+* next: greycup-activity5
 
 ### greycup-activity5
 
