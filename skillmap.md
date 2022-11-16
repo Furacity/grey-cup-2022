@@ -38,7 +38,7 @@
 * type: tutorial
 * description: Learn how to instantiate objects and apply basic physics to them.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity2
-* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/f3143bbf40a3c5c663f65222afebbdf482de18e5/img/platformer/activity2.png
+* imageUrl: https://raw.githubusercontent.com/furacity/grey-cup-2022/main/img/interface/activity1.png
 * tags: easy, long
 * next: greycup-activity3
 
