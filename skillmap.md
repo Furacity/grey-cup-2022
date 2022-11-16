@@ -14,7 +14,7 @@
 * description: Intro to our tutorial cards
 * tags: easy
 
-* url: https://github.com/Furacity/grey-cup-2022/blob/d2a7512bdddb7c6bd26c03f7f6db6c6f83f4e3f2/tutorials/interface/activity1
+* url: https://github.com/Furacity/grey-cup-2022/tutorials/interface/activity1
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/interface/activity1.png
 
 ## greycup
@@ -28,7 +28,7 @@
 * type: tutorial
 * description: Learn how to create a player and move them around a field.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity1
-* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/f3143bbf40a3c5c663f65222afebbdf482de18e5/img/platformer/activity1.png
+* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/main/img/platformer/activity1.png?raw=true
 * tags: easy
 * next: greycup-activity2
 
