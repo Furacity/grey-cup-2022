@@ -105,7 +105,7 @@ the ``||loops:on start||`` container.
 
 🔲 Click on the **x** position and change it from **0** to **10**.
 
-🔲 Add a new ``||sprites:set [mySprite] stay in screen <true>||`` and make sure its in the **ON** position
+🔲 Add a new ``||sprites:set [mySprite] stay in screen <ON>||`` and make sure its in the **ON** position
 <br/>
 
 ```blocks
