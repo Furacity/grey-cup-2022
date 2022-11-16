@@ -38,7 +38,7 @@
 * type: tutorial
 * description: Learn how to instantiate objects and apply basic physics to them.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity2
-* imageUrl: https://raw.githubusercontent.com/furacity/grey-cup-2022/main/img/interface/activity1.png
+* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/main/img/platformer/activity2.png?raw=true
 * tags: easy, long
 * next: greycup-activity3
 
@@ -48,7 +48,7 @@
 * type: tutorial
 * description: Learn how to add score into your game using overlaps.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity3
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity3.png
+* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/main/img/platformer/activity3.png?raw=true
 * tags: intermediate, overlaps
 * next: greycup-activity4
 
@@ -58,7 +58,7 @@
 * type: tutorial
 * description: Add some enemies to add some extra challenge to your game.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity4
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity4.png
+* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/main/img/platformer/activity4.png?raw=true
 * tags: intermediate, overlaps
 * next: greycup-activity5
 
@@ -68,5 +68,5 @@
 * type: tutorial
 * description: Add an animation to the football, change the amount of lives the player has and add a countdown timer.
 * url: https://github.com/Furacity/grey-cup-2022/tutorials/platformer/activity5
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/platformer/activity5.png
+* imageUrl: https://github.com/Furacity/grey-cup-2022/blob/main/img/platformer/activity5.png?raw=true
 * tags: intermediate, AI, physics
