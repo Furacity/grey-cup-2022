@@ -300,7 +300,7 @@ Lets adjust the amount of lives we start with, you can either increase the numbe
 
 🔲 Snap a ``||info:set life to [3]||`` into the bottom of the ``||loops:on start||`` container.
 
-🔲 Change the **[3]** to any positive number, including zero. I changed mine to 1.
+🔲 Change the **[3]** to any positive number, **NOT** including zero. I changed mine to 1.
 
 **When you run the game now, the enemy should spawn on the right side, but at different heights**
 
