@@ -2,8 +2,8 @@
 
 To view the project go to this link https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap
 
-
-
+<br>
+<hr>
 
 # MakeCode Skill Map Sample
 
