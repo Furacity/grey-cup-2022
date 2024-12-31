@@ -1,6 +1,6 @@
 ## Forked From MakeCodes Official Template
 
-To view the project go to this link (https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap)[https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap]
+To view the project go to this link https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap
 
 
 
