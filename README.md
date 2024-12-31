@@ -10,7 +10,7 @@ formatted as follows:
 
 mine is 
 
-`https://arcade.makecode.com/--skillmap#github:Furacity/grey-cup-2022/skillmap`
+`https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap`
 
 ## Syntax
 
