@@ -1,3 +1,10 @@
+## Forked From MakeCodes Official Template
+
+To view the project go to this link (`https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap`)[https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap]
+
+
+
+
 # MakeCode Skill Map Sample
 
 This is an example skill map that contains three separate learning paths.You can view the content here:
@@ -7,10 +14,6 @@ Github-hosted skill maps are loaded in the same manner as tutorials, with a URL 
 formatted as follows:
 
 `#github:[organization name]/[repository name]/[markdown file name]`
-
-mine is 
-
-`https://arcade.makecode.com/--skillmap#github:noahvonk/grey-cup-2022/skillmap`
 
 ## Syntax
 
